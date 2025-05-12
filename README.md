@@ -44,7 +44,3 @@ npm run format – Format files with Prettier
 ## 🌐 Live Demo
 
 Check out the live version: your-demo-link.com
-
-```
-
-```
