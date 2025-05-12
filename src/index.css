@@ -1,0 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 5%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 9%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 142 72% 65%;
+    --primary-foreground: 0 0% 9%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 345 83% 60%;
+    --accent-foreground: 0 0% 95%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 142 72% 65%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-portfolio-darker text-foreground overflow-x-hidden font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+  }
+  
+  .section-title {
+    @apply text-4xl md:text-5xl font-heading mb-8 relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    @apply absolute -bottom-3 left-0 h-1 w-20 bg-portfolio-mint;
+  }
+  
+  .progress-bar {
+    @apply h-2 bg-muted rounded-full overflow-hidden relative;
+  }
+  
+  .progress-fill {
+    @apply h-full absolute left-0 top-0 transition-all duration-1000;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-portfolio-darker;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-portfolio-mint/30 rounded-full hover:bg-portfolio-mint/50 transition-colors;
+  }
+  
+  /* Navigation indicator */
+  .nav-indicator {
+    @apply w-1 h-1 bg-white/30 rounded-full mx-1;
+  }
+  
+  .nav-indicator.active {
+    @apply bg-portfolio-mint w-3;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .text-stroke {
+    -webkit-text-stroke: 1px theme('colors.white');
+    color: transparent;
+  }
+}
