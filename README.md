@@ -14,12 +14,7 @@ I’m not a designer — I take existing designs and turn them into clean, pixel
 
 ## 📁 Folder Structure
 
-src/
-├── components/ # Reusable UI components
-├── pages/ # Page-level components
-├── assets/ # Images, fonts, etc.
-├── styles/ # Tailwind and global styles
-└── utils/ # Helper functions and types
+<pre> ```text src/ ├── components/ # Reusable UI components ├── pages/ # Page-level components ├── assets/ # Images, fonts, etc. ├── styles/ # Tailwind and global styles └── utils/ # Helper functions and types ``` </pre>
 
 ## 🛠️ Getting Started
 
