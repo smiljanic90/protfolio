@@ -14,7 +14,13 @@ I’m not a designer — I take existing designs and turn them into clean, pixel
 
 ## 📁 Folder Structure
 
-<pre> ```text src/ ├── components/ # Reusable UI components ├── pages/ # Page-level components ├── assets/ # Images, fonts, etc. ├── styles/ # Tailwind and global styles └── utils/ # Helper functions and types ``` </pre>
+```text
+src/
+├── components/
+├── pages/
+├── assets/
+├── styles/
+└── utils/
 
 ## 🛠️ Getting Started
 
@@ -37,3 +43,4 @@ npm run format – Format files with Prettier
 ## 🌐 Live Demo
 
 Check out the live version: your-demo-link.com
+```
